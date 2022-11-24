@@ -1,0 +1,42 @@
+{
+  "name": "pkg",
+  "version": "1.0.0",
+  "description": "A template for packages",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keznet/package.git"
+  },
+  "keywords": [
+    "Package",
+    "Template",
+    "Boilerplate"
+  ],
+  "author": "keznet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keznet/package/issues"
+  },
+  "homepage": "https://github.com/keznet/package#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.9.3"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
