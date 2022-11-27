@@ -9,24 +9,26 @@ interface AnimarkerProps {
   duration?: number;
 }
 
-export const Animarker = React.memo((props: AnimarkerProps) => {
-  const tagRef = React.createRef<HTMLElement>();
-  const isFound = useOnFound(tagRef);
+export const Animarker = React.memo(
+  ({ children, bgColor = 'white', color = 'yellow', duration = 1, transition = 'ease' }: AnimarkerProps) => {
+    const tagRef = React.createRef<HTMLElement>();
+    const isFound = useOnFound(tagRef);
 
-  return (
-    <mark
-      data-done={isFound}
-      style={{
-        backgroundColor: 'transparent',
-        backgroundImage: `linear-gradient(90deg, ${props.bgColor} 50%, ${props.color} 0)`,
-        backgroundSize: '200%',
-        backgroundPosition: isFound ? '-100%' : 0,
-        transition: `all ${props.duration}s ${props.transition}`,
-        color: props.color,
-      }}
-      ref={tagRef}
-    >
-      {props.children}
-    </mark>
-  );
-});
+    return (
+      <mark
+        data-done={isFound}
+        style={{
+          backgroundColor: 'transparent',
+          backgroundImage: `linear-gradient(90deg, ${bgColor} 50%, ${color} 0)`,
+          backgroundSize: '200%',
+          backgroundPosition: isFound ? '-100%' : 0,
+          transition: `all ${duration}s ${transition}`,
+          color: color,
+        }}
+        ref={tagRef}
+      >
+        {children}
+      </mark>
+    );
+  },
+);
