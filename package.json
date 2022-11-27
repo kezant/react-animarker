@@ -1,11 +1,11 @@
 {
   "name": "react-animarker",
-  "version": "2.0.1",
+  "version": "2.0.11",
   "description": "Animated mark tags on scroll",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest --config jestconfig.json",
+    "test": "jest --config jestconfig.json --passWithNoTests",
     "test:ci": "jest --ci --reporters='default' --config jestconfig.json --passWithNoTests",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
