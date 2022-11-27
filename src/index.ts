@@ -1,1 +1,1 @@
-export const Function = (name: string) => name;
+export * from './component';
