@@ -54,6 +54,6 @@
     "dist/**/*"
   ],
   "dependencies": {
-    "hookez": "^1.0.6"
+    "hookez": "^1.0.61"
   }
 }
