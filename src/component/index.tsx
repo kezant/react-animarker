@@ -5,13 +5,25 @@ interface AnimarkerProps {
   children: React.ReactNode;
   color?: string;
   bgColor?: string;
+  textColor?: string;
   transition?: 'ease' | 'ease-out' | 'ease-in-out' | 'linear' | string;
   duration?: number;
+  className?: string;
+  ref?: React.RefObject<HTMLElement> | null;
 }
 
 export const Animarker = React.memo(
-  ({ children, bgColor = 'white', color = 'yellow', duration = 1, transition = 'ease' }: AnimarkerProps) => {
-    const tagRef = React.createRef<HTMLElement>();
+  ({
+    children,
+    bgColor = 'white',
+    color = 'yellow',
+    duration = 1,
+    transition = 'ease',
+    className,
+    textColor = 'inherit',
+    ref = null,
+  }: AnimarkerProps) => {
+    const tagRef = ref ?? React.createRef<HTMLElement>();
     const isFound = useOnFound(tagRef);
 
     return (
@@ -23,8 +35,9 @@ export const Animarker = React.memo(
           backgroundSize: '200%',
           backgroundPosition: isFound ? '-100%' : 0,
           transition: `all ${duration}s ${transition}`,
-          color: color,
+          color: textColor,
         }}
+        className={className}
         ref={tagRef}
       >
         {children}
