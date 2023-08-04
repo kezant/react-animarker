@@ -1,6 +1,6 @@
 # React Animarker
 
-![Tests CI](https://github.com/keznet/react-animarker/actions/workflows/tests.yml/badge.svg)
+![Tests CI](https://github.com/kezant/react-animarker/actions/workflows/tests.yml/badge.svg)
 
 Animarker is a \<mark\> component that animates once in the viewport.
 
