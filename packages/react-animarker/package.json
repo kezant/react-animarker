@@ -1,6 +1,6 @@
 {
   "name": "react-animarker",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "description": "Animated mark tags on scroll",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
