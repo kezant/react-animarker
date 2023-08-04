@@ -24,7 +24,6 @@ jobs:
       # Setup .npmrc file to publish to npm
       - run: pnpm install
       - run: pnpm build
-      - run: cd packages/react-animarker
-      - run: pnpm publish
+      - run: pnpm publish -r
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
