@@ -48,3 +48,5 @@ export const Animarker = React.memo(
     );
   }
 );
+
+Animarker.displayName = "Animarker";
