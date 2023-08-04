@@ -16,7 +16,7 @@ export default function Home() {
       <div className="container lg:max-w-3xl">
         <h1 className="font-bold text-2xl text-center">React Animarker</h1>
         <p className="my-10 text-xl font-semibold text-center">
-          An animated &lt;mark&gt; tag which highlights once it's in the
+          An animated &lt;mark&gt; tag which highlights once it&apos;s in the
           viewport!
         </p>
         <div className="rounded-md border flex justify-between items-center p-4">
@@ -33,10 +33,10 @@ export default function Home() {
         <div className="p-10 border rounded-md text-sm lg:text-lg mb-10">
           <p className="mb-5">
             I recently had the pleasure of using React Animarker in one of my
-            web development projects, and I must say, it's an absolute
+            web development projects, and I must say, it&apos;s an absolute
             game-changer! This package has taken my user experience to a whole
-            new level, and I'm thrilled to share my positive experience with
-            others
+            new level, and I&apos;m thrilled to share my positive experience
+            with others
           </p>
           <p className="mb-5">
             One of the standout features of{" "}
@@ -72,8 +72,8 @@ export default function Home() {
           </p>
           <p className="mb-5">
             The React Animarker package truly shines when it comes to enhancing
-            the user experience. The animations drew my visitors' attention to
-            important content, creating a delightful element of surprise. I
+            the user experience. The animations drew my visitors&apos; attention
+            to important content, creating a delightful element of surprise. I
             noticed a significant increase in engagement and user interaction,
             which ultimately led to improved user satisfaction and longer time
             spent on my website.
@@ -82,17 +82,17 @@ export default function Home() {
             What also impressed me was the fantastic community support around
             the package. The developers behind React Animarker were highly
             responsive to questions and issues, providing timely assistance and
-            continuously improving the package based on user feedback. It's
+            continuously improving the package based on user feedback. It&apos;s
             clear that they are dedicated to delivering a top-notch product and
             helping developers create exceptional web experiences.
           </p>
           <p className="mb-5">
-            In conclusion, I can't recommend React Animarker enough to fellow
-            developers looking to elevate their user experience. It's a
-            versatile, user-friendly, and performant package that effortlessly
-            adds eye-catching animations to web pages. With React Animarker in
-            your toolkit, you can take your web projects to the next level,
-            leaving a lasting impact on your audience.{" "}
+            In conclusion, I can&apos;t recommend React Animarker enough to
+            fellow developers looking to elevate their user experience.
+            It&apos;s a versatile, user-friendly, and performant package that
+            effortlessly adds eye-catching animations to web pages. With React
+            Animarker in your toolkit, you can take your web projects to the
+            next level, leaving a lasting impact on your audience.{" "}
             <Animarker color="lightgreen">
               Kudos to the developers for creating such a fantastic tool!
             </Animarker>

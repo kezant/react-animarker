@@ -30,7 +30,7 @@ export default function NotFound() {
       <Logo className="mb-10" />
       <p className="text-4xl font-black mb-10">404</p>
       <p className="text-sm text-center mb-10">
-        Oopsie daisy, I believe we didn't build this page yet...
+        Oopsie daisy, I believe we didn&apos;t build this page yet...
         <br /> Are you sure this is the correct link?
       </p>
       <Button variant="outline" asChild>

@@ -124,8 +124,8 @@ importers:
   packages/react-animarker:
     dependencies:
       hookez:
-        specifier: ^1.0.61
-        version: 1.0.61
+        specifier: ^1.0.71
+        version: 1.0.71
     devDependencies:
       '@testing-library/react':
         specifier: ^13.4.0
@@ -166,6 +166,9 @@ importers:
       ts-jest:
         specifier: ^29.0.3
         version: 29.0.3(@babel/core@7.22.9)(jest@29.3.1)(typescript@5.1.6)
+      tsconfig:
+        specifier: workspace:*
+        version: link:../tsconfig
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -3976,8 +3979,8 @@ packages:
       upper-case: 1.1.3
     dev: true
 
-  /hookez@1.0.61:
-    resolution: {integrity: sha512-dOQQKPXYjG9Bx8P6cjz/2VYDTh/0JkL0pHfwctJF/DEBapswiaGeIXtylXDHvmzOs1gp0iMBg3C5bjm45pYxwQ==}
+  /hookez@1.0.71:
+    resolution: {integrity: sha512-FFJ6cdhRi/9De84DAv5yp6cwi3AUf8LNiBtKeGSkRYBXRJmntc4REzuBpKvexKCJXRUprXOVsMVmo5AYnvb39g==}
     dev: false
 
   /html-escaper@2.0.2:
